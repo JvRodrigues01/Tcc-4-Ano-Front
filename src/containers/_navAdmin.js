@@ -31,6 +31,12 @@ const navAdmin = [
         name: 'Clientes',
         to: '/admin/cliente/',
         icon: 'cil-user',
+      },
+      {
+        _name: 'CSidebarNavItem',
+        name: 'Relatorio de Auditoria',
+        to: '/admin/relatorio/',
+        icon: 'cil-settings',
       }
     ]
   }

@@ -35,6 +35,9 @@ const ListarPlaca = () => import('@/views/Admin/Placa/Listar')
 const CriarPlaca = () => import('@/views/Admin/Placa/Criar')
 const EditarPlaca = () => import('@/views/Admin/Placa/Editar')
 
+// placas
+const ListarRelatorio = () => import('@/views/Admin/Relatorio/Listar')
+
 Vue.use(Router)
 
 function configRoutes () {
@@ -177,6 +180,21 @@ function configRoutes () {
                   path: 'editar/:id',
                   name: 'Editar Cliente',
                   component: EditarCliente
+                }
+              ]
+            },
+            {
+              path: 'relatorio',
+              redirect: '/relatorio',
+              name: 'Relatorio',
+              component: {
+                render (c) { return c('router-view') }
+              },
+              children: [
+                {
+                  path: '',
+                  name: 'Listar Relatorio',
+                  component: ListarRelatorio
                 }
               ]
             }
