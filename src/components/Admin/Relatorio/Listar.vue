@@ -17,11 +17,6 @@
                 </CAlert>
             </template>
             <CRow class="card-option-table">
-                <CCol md="12 mb-4" class="text-left">
-                    <CButton size="" class="btn-outline-primary uppercase" @click="navigate('/admin/cliente/criar')">
-                        Adicionar novo <CIcon :content="freeSet.cilPlus" size="lg" style="margin:0!important" />
-                    </CButton>
-                </CCol>
                 <CCol md="3" class="text-left">
                     <CSelect
                         placeholder="Digite a sua busca:"

@@ -69,7 +69,7 @@
                         class="uppercase"
                         square
                         size="sm"
-                        @click="navigate('/admin/residencia/editar/'+ item.IdResidencia)"
+                        @click="navigate('/admin/cliente/editar/'+ item.IdCliente)"
                     >
                     Editar
                     </CButton>

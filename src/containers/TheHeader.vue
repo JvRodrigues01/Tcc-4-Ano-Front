@@ -11,13 +11,13 @@
       @click="$store.commit('toggleSidebarDesktop')"
     />
     <CHeaderBrand class="mx-auto d-lg-none" to="/">
-      <img src="../assets/img/bizseller_logo_horizontal.png"       
+      <!-- <img src="../assets/img/bizseller_logo_horizontal.png"       
         class="c-sidebar-brand-full" 
         name="logo" 
         size="custom-size"
         :height="35" 
         viewBox="0 0 556 134"
-      />
+      /> -->
     </CHeaderBrand>
     <CHeaderNav class="d-md-down-none mr-auto">
       <CHeaderNavItem class="px-3">

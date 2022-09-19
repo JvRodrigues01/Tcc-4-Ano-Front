@@ -188,12 +188,13 @@
         	},
             async recognition(element){
                 var base64 = await this.encodeImageFileAsURL(element);
+                console.log(base64);
                 const method = 'admin/placa/recognition';
                 const data = {
                     Image: base64.split(",")[1]+'==',
                 };
                 
-                const result  = await store.actions.getListPost(method, data);
+                await store.actions.getListPost(method, data);
             },
             async encodeImageFileAsURL(element) {
                 const toBase64 = file => new Promise((resolve, reject) => {

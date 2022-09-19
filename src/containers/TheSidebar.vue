@@ -6,7 +6,7 @@
     @update:show="(value) => $store.commit('set', ['sidebarShow', value])"
   >
     <CSidebarBrand class="d-md-down-none" to="/">
-      <img
+      <!-- <img
         src="../assets/img/bizseller_logo_horizontal.png"
         class="c-sidebar-brand-full"
         name="logo"
@@ -21,7 +21,7 @@
         size="custom-size"
         :height="35"
         viewBox="0 0 110 134"
-      />
+      /> -->
     </CSidebarBrand>
 
     <CRenderFunction flat :content-to-render="menu" />
